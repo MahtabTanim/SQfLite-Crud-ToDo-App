@@ -6,6 +6,6 @@ void main() {
     debugShowCheckedModeBanner: false,
     title: "To Do",
     home: const HomePage(),
-    theme: ThemeData(primarySwatch: Colors.amber),
+    theme: ThemeData(primarySwatch: Colors.cyan),
   ));
 }

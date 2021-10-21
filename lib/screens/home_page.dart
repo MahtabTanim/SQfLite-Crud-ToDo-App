@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:your_tasks/screens/add_note.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -39,7 +40,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        backgroundColor: Colors.white,
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const AddNote()));
+        },
         child: const Icon(
           Icons.add,
           size: 20,
