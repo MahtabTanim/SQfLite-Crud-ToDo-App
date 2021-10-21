@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:your_tasks/screens/home_page.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "To Do",
-    home: HomePage(),
+    home: const HomePage(),
+    theme: ThemeData(primarySwatch: Colors.amber),
   ));
 }
